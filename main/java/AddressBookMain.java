@@ -24,7 +24,7 @@ public class AddressBookMain
             option = sc.nextInt();
             switch (option) {
                 case 1:
-                    addressBook.addContact();
+                    addressBook.addPerson();
                     break;
                 case 2:
                     System.out.println("Enter the user name to edit");
@@ -87,5 +87,31 @@ public class AddressBookMain
         }
 
         sc.close();
+    }
+
+
+    public void personsInCity(String city) {
+        System.out.println("Persons in city: "+city);
+        for(int i=0;i<addressBooks.size(); i++) {
+            addressBooks.get(i).personsInCity(city);
+        }
+    }
+
+    public void personsInState(String State) {
+        System.out.println("Persons in state: "+State);
+        for(int i=0;i<addressBooks.size(); i++) {
+            addressBooks.get(i).personsInState(State);
+        }
+    }
+    public void searchByCity(String city, String name) {
+        for(int i=0;i<addressBooks.size();i++) {
+            addressBooks.get(i).searchByCity(city,name);
+        }
+    }
+
+    public void searchByState(String state, String name) {
+        for(int i=0;i<addressBooks.size();i++) {
+            addressBooks.get(i).searchByState(state,name);
+        }
     }
 }
