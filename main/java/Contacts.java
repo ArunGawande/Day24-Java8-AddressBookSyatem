@@ -1,66 +1,66 @@
 public class Contacts
 {
-       private String firstName;
-        private String lastName;
-        private String address;
-        private String city;
-        private String state;
-        private String  phoneNumber;
-        private int pinCode;
-        private String email;
+    private String firstName;
+    private String lastName;
+    private String address;
+    private String city;
+    private String state;
+    private String  phoneNumber;
+    private int pinCode;
+    private String email;
 
-        public void setFirstName(String firstName) {
+    public void setFirstName(String firstName) {
         this.firstName = firstName;
     }
-        public void setLastName(String lastName) {
+    public void setLastName(String lastName) {
         this.lastName = lastName;
     }
-        public void setAddress(String address) {
+    public void setAddress(String address) {
         this.address = address;
     }
-        public void setCity(String city) {
+    public void setCity(String city) {
         this.city = city;
     }
-        public void setState(String state) {
+    public void setState(String state) {
         this.state = state;
     }
-        public void setPhoneNumber(String number) {
+    public void setPhoneNumber(String number) {
         this.phoneNumber = number;
     }
-        public void setPinCode(int pinCode) {
+    public void setPinCode(int pinCode) {
         this.pinCode = pinCode;
     }
-        public void setEmail(String email) {
+    public void setEmail(String email) {
         this.email = email;
     }
 
 
-        public String getFirstName() {
+    public String getFirstName() {
         return this.firstName;
     }
-        public String getLastName() {
+    public String getLastName() {
         return this.lastName;
     }
-        public String getAddress() {
+    public String getAddress() {
         return this.address;
     }
-        public String getCity() {
+    public String getCity() {
         return this.city;
     }
-        public String getState() {
+    public String getState() {
         return this.state;
     }
-        public String getPhoneNumber() {
+    public String getPhoneNumber() {
         return this.phoneNumber;
     }
-        public int getPinCode() {
+    public int getPinCode() {
         return this.pinCode;
     }
-        public String getEmail() {
+    public String getEmail() {
         return this.email;
     }
 
-        public boolean equals(Object object) {
+    public boolean equals(Object object) {
         if(object == this)  return true;
         if(!(object instanceof Contacts)) return false;
         Contacts contacts = (Contacts) object;
