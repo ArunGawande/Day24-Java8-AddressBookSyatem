@@ -69,10 +69,11 @@ public class AddressBookSystem {
                     break;
                 case 5:
                     System.out.println("Select 1: count by city    2: count by state");
-                    if (sc.nextInt() == 1) {
+                    if(sc.nextInt() == 1) {
                         System.out.println("Enter city name");
                         addressBookMain.countByCity(sc.next());
-                    } else {
+                    }
+                    else {
                         System.out.println("Enter state name");
                         addressBookMain.countByState(sc.next());
                     }
